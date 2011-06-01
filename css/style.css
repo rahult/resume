@@ -1,0 +1,405 @@
+/*
+	
+	STRUCTURE:
+	- Universal Styles
+	- Headings
+	- Header - All the content above the Sticky navigation
+	- Sticky Navigation
+	- Content
+	- Contact form
+	- Contact Information
+	- Social Media Icons
+	- Footer
+
+*/
+
+/* Start Universal Styles */
+
+	body {
+		color: #333;
+		font-size: 13px;
+		padding: 0;
+		margin: 0;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+		text-shadow: rgba(0, 0, 0, 0.148438) 0px -1px 0px, rgba(255, 255, 255, 0.792969) 0px 1px 0px;
+		background: #f6f6f6;
+		}
+
+	strong, em, b, i {
+    	font-family: "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif; /* Fixes Lucida Sans Unicode looking ugly on Windows */
+		}
+
+	p {
+		overflow: hidden;
+		font-size: 15px;
+		}
+
+	a {
+		color: #A21166;
+		text-decoration: none;
+		}
+
+	a:hover {
+		text-decoration: none;
+		}
+
+	a.text-link:hover {
+		border-bottom: 1px solid;
+		cursor: hand;
+		cursor: pointer;	
+		}
+
+	a:hover, a:active, a:focus {
+		outline: 0; /* Removes the dotted outline from Firefox */
+		}
+
+	ul {
+		padding: 0;
+		margin-left: 20px;
+		}
+
+	li {
+		padding-left: 10px;
+		list-style-type: square;
+		font-size: 14px;
+		}
+
+/* End Universal Styles */
+
+
+/* Start Headings */
+	
+	h1 { /* Main Headline */
+		font-family: "Yanone Kaffeesatz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-weight: 300;
+		text-align: center;
+		font-size: 72px;
+		margin: 0;
+		line-height: 96px;
+		padding: 50px 0 20px;
+		}
+
+	h2 { /* Categories: About Me, Employment, Education, Skills etc */
+		font-family: "Yanone Kaffeesatz", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 40px;
+		font-weight: normal;
+		padding: 20px 0 0;
+		}
+
+
+	h3.section-title { /* Sub Categories: Full, Part-Time; University, School; Languages, Skills etc */
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: normal;
+		}
+
+	h4 { /* Company Names */
+		text-transform: uppercase;
+		font-size: 16px; 
+		font-weight: bold;
+		font-family: "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+		}
+
+	.electric-blue { /* Years */
+		font-weight: normal;
+		color: #156baf;
+		}
+		
+	.amp { /* Fancy Ampersands */
+		font-family: "Goudy Bookletter 1911", "Baskerville", "Palatino Linotype", "Constantia", "Lucida Sans Unicode", "Lucida Grande", Arial, Helvetica, sans-serif;
+		margin: 0 3px; 
+		}
+
+/* End Headings */
+
+
+/* Start Header - All the content above the Sticky navigation */
+
+	.sticky {
+		position: relative;
+		z-index: 10;
+		width: 100%;
+		background: #dddddd;
+		}
+		
+	.intro {
+		font-size: 18px;
+		line-height: 30px;
+		text-align: center;
+		margin: 0;
+		}
+		
+	.subheadline {
+		font-size: 18px;
+		line-height: 30px;
+		text-align: center;
+		margin-bottom: 30px;
+		}
+		
+	.purple {
+		color: #A21166;
+		}
+		
+	.internal_links {
+		visibility: hidden; /* These links must be in the code to allow the button classes to change as you scroll down the page, but they shouldn't be seen */
+		}
+
+/* End Header */
+
+
+/* Start Sticky Navigation */
+
+	.wrapper {
+		position: relative;
+		}
+		
+	.radio {
+		text-align: center;
+		}
+		
+	.navigation {
+		position: relative;
+		padding: 40px 0;
+		background: #f6f6f6 url('../img/fade.png') repeat-x; /* Fallback for Firefox 3.5 and earlier */
+		background: -moz-linear-gradient(top, #dddddd 0%, #f6f6f6 100%); /* Firefox 3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(100%,#f6f6f6)); /* Webkit browsers */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#f6f6f6',GradientType=0 ); /* For IE */
+		}
+		
+	.navigation.fixed {
+  		position: fixed;
+		top: 0;
+		padding: 40px 0;
+		text-align: center;
+		width: 100%;
+		background: #f6f6f6 url('../img/fade.png') repeat-x; /* Fallback for Firefox 3.5 and earlier */
+		background: -moz-linear-gradient(top, #dddddd 0%, #f6f6f6 100%);  /* Firefox 3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(100%,#f6f6f6)); /* Webkit browsers */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#f6f6f6',GradientType=0 ); /* For IE */
+		border-bottom: 1px solid #d6d6d6;
+		}
+
+/* End Sticky Navigation */
+
+
+/* Start Content */
+
+	.job-title {
+		margin-top: 40px;
+		}
+		
+	.slidey {
+		position: relative;
+		background: #f6f6f6; 
+		}
+		
+	.slidey.nudge {
+		margin-top: 111px; /* Pushes the main content down below the navigation */
+		}
+		
+	.employment, .education, .skills {
+		margin-bottom: 80px;
+		}
+
+/* End Content */
+
+
+/* Start Contact Form */
+
+	.email_form_label {
+		height: 20px;
+		padding: 3px 0 11px;
+		margin: 0;
+		font-size: 15px;
+		font-weight: normal;
+		}
+		
+	input[type="text"].email_form, textarea.email_form {
+		font-size: 14px;
+		background-color: #f6f6f6;
+		color: #333;
+		text-shadow: none;
+		width: 95%;
+		margin: 0 0 5px;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+		border: 1px solid #cecece;
+		padding: 0 5px;
+		}
+		
+	textarea.email_form {
+		overflow: auto;
+		padding: 5px;
+		resize: none;
+		}
+		
+	input[type="text"].email_form:hover, textarea.email_form:hover {
+		border: 1px solid #bdbdbd;
+		}
+		
+	input[type="text"].email_form:focus, textarea.email_form:focus {
+		border: 1px solid #95bdd4;
+		}
+		
+	.button_container {
+		text-align: center;
+		}
+		
+	.send_message {
+		width: 100%;
+		}
+		
+	.special { display: none; }
+	.error { border-color: #A21166 !important; }
+	#alert { color: #A21166; padding: 10px 5px; text-align: center; }
+
+/* End Contact Form */
+	
+
+/* Start Contact Information */
+
+	.resume {
+		background: url('../img/download.png') no-repeat;
+		width: 108px;
+		height: 189px;
+		position: relative;
+		}
+		
+	.resume a {
+		width: 108px;
+		height: 189px;
+		margin: 0;
+		padding: 0;
+		display: inline-block;
+		}
+		
+	.contact p {
+		font-size: 20px;
+		position: relative;
+		left: 6px;
+		}
+		
+	.social_links {
+		font-size: 15px;
+		}
+		
+	img.portrait {
+		margin: 12px 0 0;
+		border: 1px solid #d6d6d6;
+		width: 200px;
+		background: white;	
+		padding: 15px 15px 30px;
+		font-size: 18px;
+		-moz-box-shadow: 3px 3px 4px #888;
+		-webkit-box-shadow: 3px 3px 4px #888;
+		box-shadow: 3px 3px 4px #888;		
+		-ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888')"; /* For IE 8 */	
+		filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888'); /* For IE 5.5 - 7 */
+		-webkit-transform: rotate(-2deg);
+		-moz-transform: rotate(-2deg);
+		}
+		
+/* End Contact Information */
+
+
+/* Start Social Media Icons */
+
+	ul#icons {
+		margin: 0 0 20px;
+		padding: 0;
+		}
+		
+	.icons {
+		list-style-type: none;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		background: url(../img/icons-sprite-red.png) no-repeat;
+		}
+		
+	.red {
+		background: url(../img/icons-sprite-red.png) no-repeat;
+		-khtml-opacity: 0.8;      /* khtml, old safari */
+		-moz-opacity: 0.8;       /* mozilla, netscape */
+		opacity: 0.8;           /* fx, safari, opera */
+		}
+		
+	.blue {
+		background: url(../img/icons-sprite-blue.png) no-repeat;
+		-khtml-opacity: 0.8;      /* khtml, old safari */
+		-moz-opacity: 0.8;       /* mozilla, netscape */
+		opacity: 0.8;           /* fx, safari, opera */
+		}
+		
+	.icons a {
+		height: 64px;
+		width: 64px;
+		display: inline-block;
+		}
+		
+	/* More colors generously available from http://creativenerds.co.uk/freebies/180-massive-minimalistic-icon-set/ */
+	.red-01{ background-position: 0 0; width: 64px; height: 64px; } 
+	.red-02{ background-position: 0 -114px; width: 64px; height: 64px; } 
+	.red-03{ background-position: 0 -228px; width: 64px; height: 64px; } 
+	.red-04{ background-position: 0 -342px; width: 64px; height: 64px; } 
+	.red-05{ background-position: 0 -456px; width: 64px; height: 64px; } 
+	.red-06{ background-position: 0 -570px; width: 64px; height: 64px; } 
+	.red-07{ background-position: 0 -684px; width: 64px; height: 64px; } 
+	.red-08{ background-position: 0 -798px; width: 64px; height: 64px; } 
+	.red-09{ background-position: 0 -912px; width: 64px; height: 64px; } 
+	.red-10{ background-position: 0 -1026px; width: 64px; height: 64px; } 
+	.red-11{ background-position: 0 -1140px; width: 64px; height: 64px; } 
+	.red-12{ background-position: 0 -1254px; width: 64px; height: 64px; } 
+	.red-13{ background-position: 0 -1368px; width: 64px; height: 64px; } 
+	.red-14{ background-position: 0 -1482px; width: 64px; height: 64px; } 
+	.red-15{ background-position: 0 -1596px; width: 64px; height: 64px; } 
+	.red-16{ background-position: 0 -1710px; width: 64px; height: 64px; } 
+	.red-17{ background-position: 0 -1824px; width: 64px; height: 64px; } 
+	.red-19{ background-position: 0 -1938px; width: 64px; height: 64px; } 
+	.red-20{ background-position: -114px 0; width: 64px; height: 64px; } 
+	.red-21{ background-position: -114px -114px; width: 64px; height: 64px; } 
+	.red-22{ background-position: -114px -228px; width: 64px; height: 64px; } 
+	.red-23{ background-position: -114px -342px; width: 64px; height: 64px; } 
+	.red-24{ background-position: -114px -456px; width: 64px; height: 64px; } 
+	.red-25{ background-position: -114px -570px; width: 64px; height: 64px; } 
+	.red-26{ background-position: -114px -684px; width: 64px; height: 64px; } 
+	.red-27{ background-position: -114px -798px; width: 64px; height: 64px; } 
+	.red-28{ background-position: -114px -912px; width: 64px; height: 64px; } 
+	.blue-01{ background-position: 0 0; width: 64px; height: 64px; } 
+	.blue-02{ background-position: 0 -114px; width: 64px; height: 64px; } 
+	.blue-03{ background-position: 0 -228px; width: 64px; height: 64px; } 
+	.blue-04{ background-position: 0 -342px; width: 64px; height: 64px; } 
+	.blue-05{ background-position: 0 -456px; width: 64px; height: 64px; } 
+	.blue-06{ background-position: 0 -570px; width: 64px; height: 64px; } 
+	.blue-07{ background-position: 0 -684px; width: 64px; height: 64px; } 
+	.blue-08{ background-position: 0 -798px; width: 64px; height: 64px; } 
+	.blue-09{ background-position: 0 -912px; width: 64px; height: 64px; } 
+	.blue-10{ background-position: 0 -1026px; width: 64px; height: 64px; } 
+	.blue-11{ background-position: 0 -1140px; width: 64px; height: 64px; } 
+	.blue-12{ background-position: 0 -1254px; width: 64px; height: 64px; } 
+	.blue-13{ background-position: 0 -1368px; width: 64px; height: 64px; } 
+	.blue-14{ background-position: 0 -1482px; width: 64px; height: 64px; } 
+	.blue-15{ background-position: 0 -1596px; width: 64px; height: 64px; } 
+	.blue-16{ background-position: 0 -1710px; width: 64px; height: 64px; } 
+	.blue-17{ background-position: 0 -1824px; width: 64px; height: 64px; } 
+	.blue-19{ background-position: 0 -1938px; width: 64px; height: 64px; } 
+	.blue-20{ background-position: -114px 0; width: 64px; height: 64px; } 
+	.blue-21{ background-position: -114px -114px; width: 64px; height: 64px; } 
+	.blue-22{ background-position: -114px -228px; width: 64px; height: 64px; } 
+	.blue-23{ background-position: -114px -342px; width: 64px; height: 64px; } 
+	.blue-24{ background-position: -114px -456px; width: 64px; height: 64px; } 
+	.blue-25{ background-position: -114px -570px; width: 64px; height: 64px; } 
+	.blue-26{ background-position: -114px -684px; width: 64px; height: 64px; } 	
+	.blue-27{ background-position: -114px -798px; width: 64px; height: 64px; } 
+	.blue-28{ background-position: -114px -912px; width: 64px; height: 64px; } 
+
+/* End Social Media Icons */
+
+
+/* Start Footer */
+
+	.footer {
+		margin: 250px 0 20px;
+		text-align: center; 
+		}
+		
+/* End Footer */

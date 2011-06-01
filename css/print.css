@@ -1,0 +1,12 @@
+/*
+
+	Print Version of the template. It would be better to use the included .doc and .pages documents though to create a PDF version
+
+	Removed for Print Version:
+	- Navigation bar
+	- Contact Info & Social Networks
+	- Footer
+
+*/
+
+.navigation, .contact, .footer { display: none; }
